@@ -1,0 +1,4 @@
+all:
+	gcc main.c custom_math.c -o a 
+clean:
+	rm -rf *.o a
