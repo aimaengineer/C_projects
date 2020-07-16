@@ -1,0 +1,4 @@
+all:
+	gcc main.c case.c -o b 
+clean:
+	rm -rf *.o b
