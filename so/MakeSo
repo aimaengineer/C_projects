@@ -1,0 +1,4 @@
+all:
+	gcc -shared -o dl_list.so dl_list.o
+clean:
+	#m -rf *.o so

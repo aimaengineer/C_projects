@@ -1,0 +1,11 @@
+all: make_exec
+
+make_exec: dl_list.so main.o dl_list.o
+	gcc -Wall main.c -o exec ./dl_list.so
+dl_list.o: dl_list.c
+	gcc -c -Wall -Werror -fpic dl_list.c
+dl_list.so: dl_list.o
+	gcc -shared -o dl_list.so dl_list.o
+
+clean:
+#	m -rf *.o

@@ -1,0 +1,4 @@
+all:
+	gcc main.o -o exec ./dl_list.so
+clean:
+	#m -rf *.o so
